@@ -8,11 +8,7 @@ ul, ol {
 }
 
 body {
-  background-color: #EEEEEE;
-  background-color: #EE0000;
-  background-image: url(images/cork-wallet.png);
-  background-position: top center;
-  background-repeat: repeat;
+  background: #EEEEEE url(../images/cork-wallet.png) bottom center repeat;
   color: #006600;
 }
 
@@ -21,12 +17,20 @@ header {
   text-align: center;
 }
 
+header img {
+  float: left;
+}
+
 h1 {
   background-color: #99ccff;
   text-decoration-color: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding: 10px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  border-bottom: solid 2px #336699;
+}
+
+h2 {
+  padding-left: 5px;
   border-bottom: solid 2px #336699;
 }
 
@@ -46,22 +50,40 @@ a {
   color: darkblue;
 }
 
-.nav {
+nav {
   margin: 0px;
   padding: 2px;
   border-bottom: solid 1px #225588;
   background-color: #88bbff;
   text-align: center;
-  color: red;
+  color: rgba(200,0,0,.50);
 }
 
-.nav li {
+nav li {
   padding: 10px;
   display: inline;
 }
 
-.main-content {
+main {
   margin: 0px auto 0px auto;
   width: 735px;
-  }
+}
 
+footer {
+  border-top: solid 1px #225588;
+  border-bottom: solid 2px #225588;
+  background-color: #88bbff;
+  color: black;
+  text-align: center;
+}
+
+footer p {
+  margin: 0px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 735px) {
+  body {
+    color: red;
+  }
+}
