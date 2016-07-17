@@ -3,6 +3,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="jquery-3.1.0.js"></script>
     <title>Progress Project</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
       <nav>
         <li><a href="entries.html">Entries</a></li>
         <li><a href="https://www.google.com.au/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=general%20assembly" target="_blank">About</a></li>
-        <li>Contact</li>
+        <li><a href="contact.html">Contact</a></li>
       </nav>
     </header>
     <main>
@@ -27,10 +28,14 @@
       <ul>
         <li>HTML</li>
         <li>CSS</li>
+        <li>JQuery</li>
       </ul>
       <article>
         <h2>Travel</h2>
-        <p>Encouragement and Information on how to get the most out of your travels.</p>
+        <figure>
+          <figcaption>Babinda Boulders, Cairns, Queensland, Australia</figcaption>
+        </figure>
+        <p>Encouragement and information on how to get the most out of your travels.</p>
       </article>
       <article>
         <h2>Investing</h2>
@@ -41,8 +46,13 @@
       <p>Side bar</p>
     </aside>
     <footer>
-      <p>&copy; BazCo 2016</p>
+      <p>&copy; BazCo <time datetime="2016">2016</time></p>
     </footer>
   </body>
-  <script src="file.js"></script>
+  <script>
+    alert("JavaScript works!")
+    $('article').on('click', function(){
+      $(this).toggleClass('hide-article');
+    });
+  </script>
 </html>
