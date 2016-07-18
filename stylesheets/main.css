@@ -71,24 +71,24 @@ main {
 }
 
 figure {
-  margin: 0px auto 0px auto;
   height: 200px;
-  text-align: bottom;
-  color: #008800;
   background: url(../images/20160611_144730.jpg);
   background-size: cover;
   position: relative;
+  margin: 0 auto 8px auto;
+  border-radius: 5px;
 }
-figure img {
-  margin: 0px;
-  padding: 0px;
 
-}
-figcaption {
-  margin: 0px;
-  padding: 0px;
+span {
+  padding: 2px;
+  margin: 0;
+  background: rgba(0,0,0,.8);
+  position: relative;
+  top: 188px;
   float: right;
-  background: rgba(0,0,0,.5);
+  border-radius: 5px;
+  text-align: right;
+  color: #008800;
 }
 
 article p {
@@ -110,7 +110,18 @@ footer p {
   padding: 5px;
 }
 
+
+.hide-article figure {
+  height: 0;
+}
+
+.hide-article figcaption {
+  height: 0;
+  opacity: 0;
+}
+
 .hide-article p {
+  height: 0;
   opacity: 0;
 }
 
