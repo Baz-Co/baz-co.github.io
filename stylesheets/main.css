@@ -110,6 +110,9 @@ footer p {
   padding: 5px;
 }
 
+.logo {
+  background: #000;
+}
 
 .hide-article figure {
   height: 0;

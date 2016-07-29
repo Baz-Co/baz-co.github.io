@@ -1,0 +1,58 @@
+body {
+  margin: 0;
+  background: rgba(189, 204, 219, .3);
+
+}
+
+.logo {
+  height: 100px;
+  width: 165px;
+  background: -webkit-radial-gradient(#77aaee, rgba(153, 204, 255, 0));
+  background: -moz-radial-gradient(#77aaee, rgba(153, 204, 255, 0));
+  background: radial-gradient(circle, #77aaee, rgba(153, 204, 255, .1));
+  background-size: cover;
+  border-radius: 15px;
+  margin-right: 0;
+}
+
+.logo img {
+  position: absolute;
+  left: 0%;
+}
+
+.page-title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 0px;
+}
+
+a {
+  transition: color 2s ease-in-out;
+}
+
+a:hover {
+  color: red;
+}
+
+header {
+  padding-top: 5px;
+  padding-left: 5px;
+  background:  linear-gradient(#88bbff, rgba(153, 204, 255, 1));
+  text-align: center;
+}
+
+nav {
+  text-align: center;
+  background: -webkit-linear-gradient(left, #88bbff, rgba(153, 204, 255, 1));
+  background: linear-gradient(left, #88bbff, rgba(153, 204, 255, 1));
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  margin: 0 20px;
+}
+
+
