@@ -21,6 +21,7 @@ body {
 }
 
 .page-title {
+<<<<<<< HEAD
   transform: translateY(-70px);
   height: 0px;
 }
@@ -30,6 +31,15 @@ body {
   padding: 0;
 }
 
+=======
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  height: 0px;
+}
+
+>>>>>>> 9e71b4c26ae7bb63f89ea962bd00c76980292fd8
 a {
   transition: color 2s ease-in-out;
 }
@@ -41,11 +51,16 @@ a:hover {
 header {
   padding-top: 5px;
   padding-left: 5px;
+<<<<<<< HEAD
   background:  linear-gradient(#77aaee, rgba(153, 204, 255, 1));
+=======
+  background:  linear-gradient(#88bbff, rgba(153, 204, 255, 1));
+>>>>>>> 9e71b4c26ae7bb63f89ea962bd00c76980292fd8
   text-align: center;
 }
 
 nav {
+<<<<<<< HEAD
   margin: 0px;
   margin-left: -5px;
   padding: 2px;
@@ -111,3 +126,17 @@ footer p {
   margin: 0px;
   padding: 5px;
 }
+=======
+  text-align: center;
+  background: -webkit-linear-gradient(left, #88bbff, rgba(153, 204, 255, 1));
+  background: linear-gradient(left, #88bbff, rgba(153, 204, 255, 1));
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  margin: 0 20px;
+}
+
+
+>>>>>>> 9e71b4c26ae7bb63f89ea962bd00c76980292fd8
