@@ -1,10 +1,10 @@
 body, h1, p {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 ul, ol {
-  margin: 0px;
+  margin: 0;
 }
 
 body {
@@ -12,12 +12,39 @@ body {
   color: #006600;
 }
 
-header {
-  text-align: center;
+.logo {
+  height: 100px;
+  width: 165px;
+  background: -webkit-radial-gradient(#77aaee, rgba(153, 204, 255, 0));
+  background: -moz-radial-gradient(#77aaee, rgba(153, 204, 255, 0));
+  background: radial-gradient(circle, #77aaee, rgba(153, 204, 255, .1));
+  background-size: cover;
+  border-radius: 15px;
+  margin-right: 0;
 }
 
-header img {
-  float: left;
+.logo img {
+  position: absolute;
+  left: 0%;
+}
+
+.page-title {
+  transform: translateY(-70px);
+  height: 0;
+}
+
+.page-title h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0);
+}
+
+header {
+  padding-top: 5px;
+  padding-left: 5px;
+  background:  linear-gradient(#77aaee, rgba(153, 204, 255, 1));
+  text-align: center;
 }
 
 h1 {
@@ -53,16 +80,20 @@ a {
 
 nav {
   margin: 0px;
+  margin-left: -5px;
   padding: 2px;
   border-bottom: solid 1px #225588;
   background-color: #88bbff;
+  background: linear-gradient(left, #88bbff, rgba(153, 204, 255, 1));
+  background: -webkit-linear-gradient(left, #88bbff, rgba(153, 204, 255, 1));
+  background: -moz-linear-gradient(left, #88bbff, rgba(153, 204, 255, 1));
   text-align: center;
-  color: rgba(200,0,0,.50);
 }
 
 nav li {
-  padding: 10px;
+  padding: 0 20px;
   display: inline;
+  text-align: center;
 }
 
 main {
@@ -95,6 +126,10 @@ article p {
   padding: 0px 0px 0px 10px;
 }
 
+aside {
+  float: right;
+}
+
 footer {
   border-top: solid 1px #225588;
   background: rgba(136, 187, 255, 1);
@@ -110,9 +145,9 @@ footer p {
   padding: 5px;
 }
 
-
 .hide-article figure {
   height: 0;
+  opacity: 0;
 }
 
 .hide-article figcaption {
