@@ -1,0 +1,13 @@
+body {
+  background: #efefef;
+  margin: 0px;
+}
+
+header {
+  background: #caebf2;
+}
+
+#header-background {
+  width: 100%;
+  height: 200px;
+}
