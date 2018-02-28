@@ -1,0 +1,159 @@
+/* Secure correct behavior for HTML5 semantic elements */
+header,
+nav,
+main,
+section,
+article,
+figure,
+footer,
+aside {
+  display: block;
+}
+
+body {
+  background: #efefef;
+  margin: 0px;
+}
+
+header {
+  background: #5ca2d0;
+}
+
+.page-title {
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid lightsteelblue;
+}
+
+.page-title > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#avatar {
+  border-radius: 100%;
+  border: 3px solid #caebf2;
+  display: inline-block;
+}
+
+.page-title h1, .page-titlke h2 {
+  margin: 7px;
+  text-align: left;
+}
+
+.page-title h1 {
+  font-family: "ansonregular";
+  font-size: 3em;
+}
+
+.page-title h2 {
+  font-family: "League Gothic";
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.logo {
+  position: fixed;
+  display: inline-block;
+  /* float: left; */
+  z-index: 2;
+}
+
+nav {
+  text-align: center;
+  padding: 5px 0px;
+  border-bottom: 1px solid lightsteelblue;
+  transition: all .5s;
+  width: 100%;
+}
+
+.fixed-nav #site-nav {
+  position: fixed;
+  text-transform: uppercase;
+  transform: scale(1.3);
+  top: 0;
+  background: #5ca2d0;  
+}
+
+
+#site-nav > li {
+  text-align: center;
+  display: inline-block;
+  border: 1px solid #caebf2;
+  border-radius: 25px;
+  padding: 5px 40px;
+  margin: 0px 10px;
+  width: 60px;
+}
+
+.fixed-nav #site-nav > li {
+  padding-top: 10px;
+  border: 0px;  
+}
+
+
+#external-links {
+  text-align: center;
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+#external-links > li {
+  text-align: center;
+  display: inline-block;
+  padding: 5px 40px;
+  margin: 0px 10px;
+  width: 60px;
+
+}
+
+.icon-link {
+  height: 30px;
+  width: 30px;
+}
+
+section {
+  padding: 5px 0px;
+}
+
+.developer-profile {
+  text-align: justify;
+  padding: 15px 45px;
+}
+
+section:nth-child(even) {
+  background: #dfdfdf;
+}
+
+footer {
+  background: #caebf2;
+  text-align: center;
+  padding: 1px;
+  position: relative;
+  bottom: 0px;
+}
+
+body {
+  font-family: "arial";
+}
+
+@font-face {
+  font-family: "ansonregular";
+  src: url("anson-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("anson-regular-webfont.woff") format("woff"),
+    url("anson-regular-webfont.ttf") format("truetype"),
+    url("anson-regular-webfont.svg#ansonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "League Gothic";
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
