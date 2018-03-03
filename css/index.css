@@ -1,3 +1,5 @@
+/* @import '../styles.css'; */
+
 /* Secure correct behavior for HTML5 semantic elements */
 header,
 nav,
@@ -65,7 +67,7 @@ header {
 .navigation {
   position: absolute;
   bottom: 0px;
-  width: 100%;  
+  width: 100%;
   border-top: 2px solid lightsteelblue;
 }
 
@@ -73,10 +75,20 @@ nav {
   text-align: center;
   padding: 5px 0px;
   border-bottom: 3px solid lightsteelblue;
-  transition: all .5s;
+  transition: all 1s;
   width: 100%;
-  background: #3f6d8b;  
+  background: #3f6d8b;
 }
+
+/* .fixed-nav nav {
+  text-align: center;
+  padding: 5px 0px;
+  border-bottom: 3px solid lightsteelblue;
+  transition: all .5s;
+  width: auto;
+  background: #3f6d8b;
+}
+ */
 
 #site-nav a:link {
   color: lightsteelblue;
@@ -88,12 +100,19 @@ nav {
   text-decoration: none;
 }
 
+#site-nav a:hover {
+  color: lightsteelblue;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 .fixed-nav #site-nav {
   position: fixed;
   transform: scale(1);
   top: 0;
   z-index: 2;
-  /* background: #5ca2d0;   */
+  /* background: #5ca2d0; */
 }
 
 
@@ -109,7 +128,7 @@ nav {
 
 .fixed-nav #site-nav > li {
   border: 0px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 
@@ -120,13 +139,38 @@ nav {
   background: lightsteelblue;
 }
 
+.fixed-nav #external-links {
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  width: auto;
+  z-index: 1;
+  border: none;
+  border-radius: 15px 0 0 15px;
+}
+
+.fixed-nav #external-links {
+  display: block;
+  background: #3f6d8b;
+  /* display: inline; */
+  /* background: #5ca2d0; */
+  list-style-type: lower-alpha;  
+}
+
 #external-links > li {
   text-align: center;
   display: inline-block;
   padding: 5px 40px;
   margin: 0px 10px;
   width: 60px;
+}
 
+.fixed-nav #external-links > li {
+  display: block;
+  border: none;
+  padding: 10px;
+  margin: 0;
+  width: auto;
 }
 
 .icon-link {
@@ -171,23 +215,27 @@ body {
   font-family: "arial";
 }
 
-@font-face {
-  font-family: "ansonregular";
-  src: url("anson-regular-webfont.eot?#iefix") format("embedded-opentype"),
-    url("anson-regular-webfont.woff") format("woff"),
-    url("anson-regular-webfont.ttf") format("truetype"),
-    url("anson-regular-webfont.svg#ansonregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+#scroll-down {
+  position: fixed;
+  bottom: 5%;
+  right: 7%;
+  background: #3f6d8b;
+  border: 3px solid lightsteelblue;
+  border-radius: 100%;
+  color: lightsteelblue;
+  text-align: center;
+  width: 50px;
+  height: 50px;
 }
 
-@font-face {
-    font-family: "League Gothic";
-    src: url('leaguegothic-regular-webfont.eot');
-    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('leaguegothic-regular-webfont.woff') format('woff'),
-         url('leaguegothic-regular-webfont.ttf') format('truetype'),
-         url('leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+#scroll-down:hover {
+  background: lightsteelblue;
+  border: 3px solid #3f6d8b;
+  border-radius: 100%;
+  color: #3f6d8b;
+}
+
+#scroll-down .hidden {
+  visibility: hidden;
+  bottom: 0px;
 }
