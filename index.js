@@ -20,7 +20,7 @@ function handleScroll(e) {
     main.style.paddingTop = siteNav.offsetHeight + 'px'
     document.body.classList.add('fixed-nav')
   } else {
-    main.style.paddingTop = 0
+    main.style.marginTop = -50+'px'
     document.body.classList.remove('fixed-nav')
   }
 }
