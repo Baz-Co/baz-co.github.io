@@ -1,6 +1,6 @@
-# <http://www.github.com/baz-co>
+# [baz-co.github.io](https://baz-co.github.io/ "baz-co github io")
 
-Clone or check out the repo as it lays. Currently only optimized for desktop viewing.
+An old personal website.. the learning objective was to build a static website using only HTML, CSS, and JS.
 
 ## Technical Features that can be marveled:
 
@@ -11,4 +11,4 @@ Clone or check out the repo as it lays. Currently only optimized for desktop vie
 * [x] [Parallax Scrolling](https://www.w3schools.com/howto/howto_css_parallax.asp "Background Image Scroll under content blocks")
 
 
-"Writing is an exploration. You start from nothing and learn as you go" - E. L. Doctorow
+> "Writing is an exploration. You start from nothing and learn as you go" - E. L. Doctorow
